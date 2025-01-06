@@ -6,7 +6,7 @@ import { IconChevronRight, IconCircleCheck } from "@tabler/icons-react";
 import BackGroundShape from "../images/hero/hero-bg.png";
 import HeroCar from "../images/hero/hero-image.webp";
 
-const Hero: React.FC = () => {
+const HeroSection: React.FC = () => {
   const [goUp, setGoUp] = useState<boolean>(false);
   const scrollToTop = (): void => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -88,4 +88,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

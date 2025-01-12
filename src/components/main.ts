@@ -1,0 +1,15 @@
+export { default as Banner } from "./Banner";
+export { default as BookCar } from "./BookCar";
+export { default as CarBox } from "./CarBox";
+export { default as ChooseUs } from "./ChooseUs";
+export { default as Download } from "./Download";
+export { default as Faq } from "./FAQs";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./HeroSection";
+export { default as HeroPages } from "./HeroPages";
+export { default as Navbar } from "./Navbar";
+export { default as PlanTrip } from "./PlanTrip";
+export { default as PickCar } from "./PickACar";
+export { default as Testimonials } from "./Testimonials";
+export { default as BookCarModal } from "./BookCarModel";
+export { default as BookBanner } from "./BookBanner";

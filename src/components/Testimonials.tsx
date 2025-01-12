@@ -5,67 +5,56 @@ import User2 from "../images/testimonials/user-2.webp";
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="testimonials-section bg-gray-50 py-12">
-      <div className="container mx-auto px-4">
-        <div className="testimonials-content text-center">
-          <div className="testimonials-content__title mb-8">
-            <span className="text-primary font-semibold">
-              What Our Customers Say
-            </span>
-            <h2 className="text-3xl font-bold text-gray-800">
-              Real Feedback, Real Experiences
-            </h2>
-            <p className="text-gray-600 mt-2">
-              See how DriveOps has helped our customers enjoy a seamless car
-              rental experience. We value every customer's opinion and strive to
-              deliver excellence in every booking.
+    <section className="testimonials-section">
+      <div className="container">
+        <div className="testimonials-content">
+          <div className="testimonials-content__title">
+            <span>100% Satisfaction</span>
+            <h2>Customer Reviews</h2>
+            <p>
+              Discover the positive impact we've made on our clients by reading
+              their testimonials. Our clients have experienced our services and
+              results, and are eager to share their positive experiences with
+              you.
             </p>
           </div>
 
-          <div className="all-testimonials grid gap-6 md:grid-cols-2">
-            <div className="all-testimonials__box bg-white shadow-md rounded-md p-6">
-              <span className="quotes-icon text-primary mb-4 inline-block">
-                <IconQuote width={50} height={50} />
+          <div className="all-testimonials">
+            <div className="all-testimonials__box">
+              <span className="quotes-icon">
+                <IconQuote width={60} height={60} />
               </span>
-              <p className="text-gray-700 italic">
-                "The booking process was straightforward, and the car I rented
-                was in top-notch condition. DriveOps made my trip smooth and
-                stress-free."
+              <p>
+                "We rented a car from this site and had an amazing experience!
+                The booking was simple and the rental rates were very
+                affordable."
               </p>
-              <div className="all-testimonials__box__name mt-4 flex items-center">
-                <img
-                  src={User1}
-                  alt="Kitonyo Kelvin"
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <h1 className="text-gray-800 font-semibold">
-                    Kitonyo Kelvin
-                  </h1>
-                  <p className="text-gray-500 text-sm">Mombasa</p>
+              <div className="all-testimonials__box__name">
+                <div className="all-testimonials__box__name__profile">
+                  <img src={User1} alt="" />
+                  <span>
+                    <h1>Kitonyo Kelvin</h1>
+                    <p>Mombasa</p>
+                  </span>
                 </div>
               </div>
             </div>
 
-            <div className="all-testimonials__box bg-white shadow-md rounded-md p-6">
-              <span className="quotes-icon text-primary mb-4 inline-block">
-                <IconQuote width={50} height={50} />
+            <div className="all-testimonials__box box-2">
+              <span className="quotes-icon">
+                <IconQuote width={60} height={60} />
               </span>
-              <p className="text-gray-700 italic">
-                "DriveOps provided excellent service, and the car exceeded my
-                expectations. I’ll definitely use their services again!"
+              <p>
+                "The car was in great condition and made our trip even better.
+                Highly recommend this car rental site!"
               </p>
-              <div className="all-testimonials__box__name mt-4 flex items-center">
-                <img
-                  src={User2}
-                  alt="Marianne James"
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <h1 className="text-gray-800 font-semibold">
-                    Marianne James
-                  </h1>
-                  <p className="text-gray-500 text-sm">Kisumu</p>
+              <div className="all-testimonials__box__name">
+                <div className="all-testimonials__box__name__profile">
+                  <img src={User2} alt="" />
+                  <span>
+                    <h1>Marianne James</h1>
+                    <p>Kisumu</p>
+                  </span>
                 </div>
               </div>
             </div>

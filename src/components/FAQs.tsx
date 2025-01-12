@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import { IconChevronDown } from "@tabler/icons-react";
 
 const Faq: React.FC = () => {
@@ -17,94 +18,83 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className="faq-section bg-gray-100 py-12">
-      <div className="container mx-auto px-4">
-        <div className="faq-content text-center">
-          <div className="faq-content__title mb-8">
-            <span className="text-primary font-semibold">Have Questions?</span>
-            <h2 className="text-3xl font-bold text-gray-800">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-gray-600 mt-2">
-              Find quick answers to common questions about renting a vehicle on
-              DriveOps.
+    <section className="faq-section">
+      <div className="container">
+        <div className="faq-content">
+          <div className="faq-content__title">
+            <span>Questions?</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Common questions about the car rental booking process on our site:
+              Answers to frequently asked questions and queries.
             </p>
           </div>
 
-          <div className="all-questions grid gap-6">
-            <div className="faq-box bg-white shadow-md rounded-md p-4">
+          <div className="all-questions">
+            <div className="faq-box">
               <div
                 id="q1"
                 onClick={() => openQ("q1")}
-                className={`faq-box__question flex justify-between items-center cursor-pointer ${getClassQuestion(
-                  "q1"
-                )}`}
+                className={`faq-box__question ${getClassQuestion("q1")}`}
               >
-                <p className="text-gray-800 font-medium">
-                  1. How do I find the right vehicle for my needs?
+                <p>
+                  1. How can I be sure I'm getting the best car rental price?
                 </p>
                 <IconChevronDown />
               </div>
               <div
                 id="q1"
-                className={`faq-box__answer mt-4 text-gray-600 ${getClassAnswer(
-                  "q1"
-                )}`}
+                onClick={() => openQ("q1")}
+                className={`faq-box__answer ${getClassAnswer("q1")}`}
               >
-                DriveOps makes it easy! Use our advanced filters to browse by
-                vehicle type, price, location, or features. Whether it’s a
-                compact car for city travel or an SUV for family trips, we have
-                you covered.
+                On our site, we guarantee price transparency and offer an easy
+                comparison between different vehicle options and rates.
+                Additionally, we often have special promotions and exclusive
+                discounts for our customers.
               </div>
             </div>
-
-            <div className="faq-box bg-white shadow-md rounded-md p-4">
+            <div className="faq-box">
               <div
                 id="q2"
                 onClick={() => openQ("q2")}
-                className={`faq-box__question flex justify-between items-center cursor-pointer ${getClassQuestion(
-                  "q2"
-                )}`}
+                className={`faq-box__question ${getClassQuestion("q2")}`}
               >
-                <p className="text-gray-800 font-medium">
-                  2. Are the vehicles well-maintained and reliable?
+                <p>
+                  2. How can I trust the quality of the cars available for
+                  rental at Rent Easy?
                 </p>
                 <IconChevronDown />
               </div>
               <div
                 id="q2"
-                className={`faq-box__answer mt-4 text-gray-600 ${getClassAnswer(
-                  "q2"
-                )}`}
+                onClick={() => openQ("q2")}
+                className={`faq-box__answer ${getClassAnswer("q2")}`}
               >
-                Absolutely! All vehicles listed on DriveOps are thoroughly
-                inspected, regularly serviced, and maintained to the highest
-                standards by trusted rental providers.
+                We only work with reputable and reliable car rental companies,
+                ensuring that all vehicles available for rental on our site are
+                in excellent condition and regularly maintained. Additionally,
+                we offer a variety of vehicle categories to meet our customers'
+                different needs and preferences.
               </div>
             </div>
-
-            <div className="faq-box bg-white shadow-md rounded-md p-4">
+            <div className="faq-box">
               <div
                 id="q3"
                 onClick={() => openQ("q3")}
-                className={`faq-box__question flex justify-between items-center cursor-pointer ${getClassQuestion(
-                  "q3"
-                )}`}
+                className={`faq-box__question ${getClassQuestion("q3")}`}
               >
-                <p className="text-gray-800 font-medium">
-                  3. What payment options do you support?
-                </p>
+                <p>3. What payment options are available when booking a car?</p>
                 <IconChevronDown />
               </div>
               <div
                 id="q3"
-                className={`faq-box__answer mt-4 text-gray-600 ${getClassAnswer(
-                  "q3"
-                )}`}
+                onClick={() => openQ("q3")}
+                className={`faq-box__answer ${getClassAnswer("q3")}`}
               >
-                DriveOps supports secure payments via major credit/debit cards
-                and Stripe. Your financial security is our top priority, with
-                encrypted transactions for peace of mind.
+                We accept a variety of payment methods, including major
+                credit/debit cards and, in some cases, cash payment upon vehicle
+                pickup. We ensure security and convenience in all financial
+                transactions conducted.
               </div>
             </div>
           </div>
